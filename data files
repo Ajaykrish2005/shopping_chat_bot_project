@@ -1,0 +1,39 @@
+1.ProductCatalog.json
+
+  [
+  {"id": 1, "name": "Laptop", "category": "Electronics", "price": 999.99, "specifications": {...}},
+  {"id": 2, "name": "Running Shoes", "category": "Footwear", "price": 59.99, "specifications": {...}},
+  // Add more products...
+]
+
+2.UserPreference.json
+
+  [
+  {"userId": "user123", "preferredCategories": ["Electronics", "Fashion"], "budgetRange": {"min": 50, "max": 200}},
+  {"userId": "user456", "preferredCategories": ["Footwear", "Sports"], "budgetRange": {"min": 30, "max": 100}},
+  // Add more user preferences...
+]
+
+3.OrderHistory.json
+
+  [
+  {"orderId": "order001", "userId": "user123", "products": [{"productId": 1, "quantity": 2}, {"productId": 2, "quantity": 1}], "totalAmount": 259.97},
+  {"orderId": "order002", "userId": "user456", "products": [{"productId": 3, "quantity": 1}], "totalAmount": 79.99},
+  // Add more order history...
+]
+
+4.Promotions.json
+
+  [
+  {"promotionId": "promo001", "discountPercentage": 10, "validUntil": "2024-12-31"},
+  {"promotionId": "promo002", "discountPercentage": 20, "validUntil": "2024-06-30"},
+  // Add more promotions...
+]
+
+5.ChatPairs.json
+
+  [
+  {"id": 1, "input": "Hi", "output": "Hello! How can I assist you today?"},
+  {"id": 2, "input": "Tell me about laptops", "output": "Sure! We have a variety of laptops known for high performance. What are your specific preferences?"},
+  // Add more chat pairs...
+]

@@ -1,11 +1,53 @@
- ["hi|hello|hey", ["Welcome to our online shopping assistant!", "Hi there!"]],
-    ["how are you", ["I'm just a bot, but I'm here to assist you with your shopping needs."]],
-    ["bye|goodbye", ["Thank you for using our shopping assistant. Goodbye!", "Have a great day!"]],
-    ["help", ["I can help you with product recommendations, order tracking, and more. Just ask!"]],
-    ["product recommendations", ["Sure, could you please specify the type of product you're looking for?"]],
-    ["order tracking", ["To track your order, provide your order number and I'll get the details for you."]],
-    ["shipping information", ["Our standard shipping takes 3-5 business days. Express shipping is available for faster delivery."]],
-    ["return policy", ["You can return items within 30 days of purchase. Please check our website for detailed return instructions."]],
-    ["payment methods", ["We accept credit cards, PayPal, and other major payment methods. Your payment information is secure with us."]],
-    ["latest offers", ["Check our website for the latest offers and discounts. We frequently update our promotions!"]],
-    ["laptop information", ["We offer a variety of laptops from top brands. Our laptops are known for high performance and durability. Feel free to specify your preferences for more personalized recommendations."]],
+Test Cases for Shopping Assistant Chatbot
+
+1.Test Case: User Greetings
+Input: "Hi"
+Expected Output: "Welcome to our online shopping assistant! How can I help you today?"
+
+2.Test Case: Product Inquiry
+Input: "Tell me about laptops"
+Expected Output: Provide detailed information about available laptops, including specifications and pricing.
+
+3.Test Case: Product Recommendations
+Input: "Recommend a fashion item"
+Expected Output: Suggest relevant fashion items based on user preferences or popular choices.
+
+4.Test Case: Order Tracking Inquiry
+Input: "How can I track my order?"
+Expected Output: Prompt user for order details and provide order tracking information.
+
+5.Test Case: Promotion Inquiry
+Input: "What are the latest promotions?"
+Expected Output: Display current promotions and discounts available for users.
+
+6.Test Case: User Preferences Update
+Input: "Update my preferred categories to Electronics and Sports"
+Expected Output: Confirm the update and adapt product recommendations accordingly.
+
+7.Test Case: Invalid Input Handling
+Input: Random or nonsensical phrases
+Expected Output: Respond with a polite message explaining that the input is not understood.
+
+8.Test Case: Empty Cart Handling
+Input: "View my cart"
+Expected Output: Inform the user that the cart is empty and suggest adding items.
+
+9.Test Case: Data Integrity Check
+Expected Output: Ensure that data files (e.g., product catalog, user preferences) are loaded correctly, and the chatbot's responses are consistent with the data.
+
+10.Test Case: Integration Test - API Calls
+Expected Output: Test API endpoints independently to ensure they return the expected data for specific requests (e.g., product details, order history).
+
+11.Test Case: Multi-Turn Conversation
+Expected Output: Simulate a multi-turn conversation where the user inquires about products, adds items to the cart, and proceeds to checkout.
+
+12.Test Case: Concurrency Test
+Expected Output: Simulate multiple users interacting with the chatbot simultaneously to check for any issues related to concurrent requests.
+
+13.Test Case: Error Handling - No Product Found
+Input: "Tell me about quantum computers"
+Expected Output: Inform the user that no products matching the query were found.
+
+14.Test Case: User Logout
+Input: "Logout"
+Expected Output: Confirm user logout and provide a closing message.
